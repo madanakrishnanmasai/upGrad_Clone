@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/course.css">
+  <title>Masters of Science in Data Science</title>
+</head>
+
+<body>
+  <div id="navBar_ms">
+    <img id="upGrad_logo_ms" src="https://startupreporter.in/wp-content/uploads/2020/08/UpGradLogo.png" alt="" />
+    <button id="nav_courses_btn_ms">COURSES</button>
+
+    <div style="margin-left: 254px" class="nav_options_ms">
+      HIRE FROM UPGRAD
+    </div>
+    <div class="nav_options_ms">STUDY ABROAD</div>
+    <div class="nav_options_ms">FOR BUSINESS</div>
+    <div class="nav_options_ms">MORE</div>
+    <button id="startLearning_btn_ms">START LEARNING</button>
+  </div>
+
+  <section id="banner-mk">
+    <div class="container banner-info text-white">
+      <h1 class="banner-title pos-rel">Master of Science in Data Science</h1>
+      <h2 class="banner-dec pos-rel">
+        Get a 2 year Full Time Masters in Data Science with the Latest Cutting Edge Curriculum from One of the Top 100
+        Best Global Universities in the World, University of Arizona. Start your Masters today at Rs. 21,500 per month.
+        <br>
+      </h2>
+      <button class="cta-btn pos-rel" id='open'>Apply Now</button>
+      <div class="banner-partners pos-rel">
+        <p>Experts from |</p>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/IBM_logo.svg/800px-IBM_logo.svg.png" alt="">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Development_Credit_Bank.svg/2560px-Development_Credit_Bank.svg.png"
+          alt="">
+        <img
+          src="data:image/png;base64,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"
+          alt="">
+      </div>
+      <div class="banner-program-stats">
+        <div class="stats">
+          <p class="stat-1">30,000+</p>
+          <p class="font-sm">learners</p>
+        </div>
+        <div class="stats">
+          <p class="stat-1">Online</p>
+          <p class="font-sm">Format</p>
+        </div>
+        <div class="stats">
+          <p class="stat-1">24 Months</p>
+          <p class="font-sm">12-15 hrs/week</p>
+        </div>
+        <div class="stats">
+          <p class="stat-1">Nov 13,2021</p>
+          <p class="font-sm">Start Date</p>
+        </div>
+        <div class="stats">
+          <p class="stat-1">200+</p>
+          <p class="font-sm">Hiring Partners</p>
+        </div>
+        <div class="stats">
+          <p class="stat-1">EMI Options</p>
+          <p class="font-sm">Starting at Rs. 21,500/month*</p>
+        </div>
+      </div>
+      <!-- MODAL -->
+      <div class="modal-container" id="modal_container">
+        <div class="modal">
+          <div class="modal-cont">
+            <div class="modal-image">
+              <img src='https://image.freepik.com/free-vector/flat-university-concept-background_23-2148192915.jpg'
+                alt="imageSrc">
+            </div>
+            <div class="modal-content">
+              <h1>Enter your mobile number to start learning</h1>
+              <div class="input-box">
+                <img
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAUCAMAAACtdX32AAAANlBMVEUSiAdgmCtwcL14eMB5ecB9fcOAgMWJicmSksyTk8yTk82UlM2vr9q/v+Hg4PH/mTP/u3f///+1rU14AAAARklEQVQoz9XOMRKAIAxE0RhQBJMF7n9ZW1Kwtb4yf2Yn0in5cB6UzJXlbOEQsj3A7duc0AqU5HKRbBU49+PTVT2+dlDyWy8zUxeIwBMVGgAAAABJRU5ErkJggg=="
+                  alt="">
+                <input type="text" class="phone-number" id="phone" placeholder="9999 9999">
+              </div>
+              <button class="modal-button" id="continue">Continue</button>
+            </div>
+          </div>
+          <button class="close-me" id="close">Close me</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="programme-overview">
+    <h1>Programme Overview</h1>
+    <h3>Key Highlights</h3>
+    <div class="content">
+      <div class="highlights">
+        <div class="highlight-content">
+          <img src="" alt="">
+          <p>Designed for Working Professionals</p>
+        </div>
+        <div class="highlight-content">
+          <img src="" alt="">
+          <p>1350+ Hours of Learning</p>
+        </div>
+        <div class="highlight-content">
+          <img src="" alt="">
+          <p>No Cost EMI Options available</p>
+        </div>
+        <div class="highlight-content">
+          <img src="" alt="">
+          <p>Advanced Certificate Programme from IIIT Bangalore</p>
+        </div>
+        <div class="highlight-content">
+          <img src="" alt="">
+          <p>University of Arizona Alumni Status</p>
+        </div>
+        <div class="highlight-content">
+          <img src="" alt="">
+          <p>1:1 Personalised Mentorship from Data Science Industry Experts</p>
+        </div>
+        <div class="highlight-content">
+          <img src="" alt="">
+          <p>Placement Assistance (Job Opportunities Portal, Hiring Drives, Resume Building & more)
+          </p>
+        </div>
+        <div class="highlight-content">
+          <img src="" alt="">
+          <p>Support available all days 9AM - 9PM IST for queries</p>
+        </div>
+      </div>
+      <div class="card">
+        <p>Bachelor’s Degree with 50% or equivalent passing marks. No coding experience required.
+          <br>
+          <br>
+          "Data Science is the tech. Bitcoin is merely the first mainstream manifestation of its potential." - Marc
+          Kenigsberg
+        </p>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="syllabus">
+    <div class="container-syllabus">
+      <h1>Syllabus</h1>
+      <p>Best in-class content by leading faculty and industry leaders in the form of videos, cases and project,
+        assignments and live sessions</p>
+      <div class="accordion">
+        <div class="accordion-item">
+          <div class="accordion-item-header">
+            Pre-Requisites
+          </div>
+          <div class="accordion-item-body">
+            <div class="accordion-item-body-content">
+              <ul class="lists">
+                <li class="flex-item">Javascript</li>
+                <li class="flex-item">Internet & Networking Basics</li>
+                <li class="flex-item border-none">Tool Node</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <div class="accordion-item-header">
+            Data Science: Basics and Applications
+          </div>
+          <div class="accordion-item-body">
+            <div class="accordion-item-body-content">
+              <ul class="lists">
+                <li class="flex-item">Node Fundamentals</li>
+                <li class="flex-item">Data Science Basics</li>
+                <li class="flex-item">Data Science Features</li>
+                <li class="flex-item">Ethereum Fundamentals</li>
+                <li class="flex-item">Smart Contract Development in Ethereum</li>
+                <li class="flex-item">DAPP Development in Ethereum</li>
+                <li class="flex-item">Assignment/Project</li>
+                <li class="flex-item border-none">Tools: Solidity, Ethereum, Truffle, Ganache, Metamask, Remix, IDE &
+                  Wallets</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <div class="accordion-item-header">
+            Building a Distributed Application on Hyperledger Fabric
+          </div>
+          <div class="accordion-item-body">
+            <div class="accordion-item-body-content">
+              <ul class="lists">
+                <li class="flex-item">Hyperledger Fundamentals</li>
+                <li class="flex-item">Fabric Network Setup</li>
+                <li class="flex-item">Chaincode Development</li>
+                <li class="flex-item">DAPP Development</li>
+                <li class="flex-item">Assignment/Project</li>
+                <li class="flex-item border-none">Tools: YAML, Docker, Hyperledger, Fabric, Node & Express</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <div class="accordion-item-header">
+            Architecting Data Science Applications (Delivered Live)
+          </div>
+          <div class="accordion-item-body">
+            <div class="accordion-item-body-content">
+              <ul class="lists">
+                <li class="flex-item">UPSTAC Covid App Architecting and Development</li>
+                <li class="flex-item">Architecting a DeFi application</li>
+                <li class="flex-item">Other Data Science Frameworks and their Use Cases</li>
+                <li class="flex-item">Assignment/Project</li>
+                <li class="flex-item">Exam weel</li>
+                <li class="flex-item border-none">Tools: Hyperledger, Fabric, MonogDB, Express, Node, Docker,
+                  Kubernettes, BaSS,
+                  Ethereum & Solidity</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <div class="accordion-item-header">
+            Capstone Project
+          </div>
+          <div class="accordion-item-body">
+            <div class="accordion-item-body-content">
+              <ul class="lists">
+                <li class="flex-item border-none">Capstone Project</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="instructor-mk">
+    <div class="heading">
+      <h1>Instructors and Experts</h1>
+      <p>Learn from India's leading Data Science faculty and industry leaders </p>
+    </div>
+    <div class="instructor-container">
+      <div class="glide">
+        <div class="glide__track" data-glide-el="track">
+          <ul class="glide__slides">
+            <li class="glide__slide">
+              <div class="card-instructor">
+                <div class="card-img">
+                  <img
+                    src="https://images.unsplash.com/photo-1599566150163-29194dcaad36?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=634&q=80"
+                    alt="">
+                </div>
+                <div class="card-content">
+                  <h1 class="text-black">Mathew</h1>
+                  <p class="text-black">Professor</p>
+                  <p>He has a Ph.D in Physics and has published more than 60 papers on OSS and has presented 32
+                    technical papers at national and international</p>
+                </div>
+              </div>
+            </li>
+            <li class="glide__slide">
+              <div class="card-instructor">
+                <div class="card-img">
+                  <img
+                    src="https://images.unsplash.com/photo-1544723795-3fb6469f5b39?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=635&q=80"
+                    alt="">
+                </div>
+                <div class="card-content">
+                  <h1 class="text-black">Jeremey</h1>
+                  <p class="text-black">Associate Professor</p>
+                  <p>He has a PhD from the Department of Computer Science and Automation, IISC Bangalore.A master's from
+                    IIT Roorkee and a BE from Nagpur University.</p>
+                </div>
+              </div>
+            </li>
+            <li class="glide__slide">
+              <div class="card-instructor">
+                <div class="card-img">
+                  <img
+                    src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80"
+                    alt="">
+                </div>
+                <div class="card-content">
+                  <h1 class="text-black">Jenny</h1>
+                  <p class="text-black">Associate Professor</p>
+                  <p>She did her Master's in Mathematics from University of Madras,Chennai.</p>
+                </div>
+              </div>
+            </li>
+            <li class="glide__slide">
+              <div class="card-instructor">
+                <div class="card-img">
+                  <img
+                    src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=634&q=80"
+                    alt="">
+                </div>
+                <div class="card-content">
+                  <h1 class="text-black">Ron</h1>
+                  <p class="text-black">Head | Techonology and Innovation</p>
+                  <p>He has 18+ years of experience as a technologist and innovator who has delivered innovative
+                    software solution for industry-leading enterprises</p>
+                </div>
+              </div>
+            </li>
+            <li class="glide__slide">
+              <div class="card-instructor">
+                <div class="card-img">
+                  <img
+                    src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=634&q=80"
+                    alt="">
+                </div>
+                <div class="card-content">
+                  <h1 class="text-black">Fred</h1>
+                  <p class="text-black">Data Science Advisory and Presales</p>
+                  <p>He completed his MBA from SP Jaon and has more than a decade of experience in finance, consultancy
+                    and innovative technologies such as Data Science.</p>
+                </div>
+              </div>
+            </li>
+            <li class="glide__slide">
+              <div class="card-instructor">
+                <div class="card-img">
+                  <img
+                    src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80"
+                    alt="">
+                </div>
+                <div class="card-content">
+                  <h1 class="text-black">Joshua</h1>
+                  <p class="text-black">Chief Mentor | Data Science Alliance</p>
+                  <p>He has 16+ years of experience and is a Global IT innovation Advisor and Industry Expert for
+                    emerging technologies like Data Science,AI and Fintech</p>
+                </div>
+              </div>
+            </li>
+            <li class="glide__slide">
+              <div class="card-instructor">
+                <div class="card-img">
+                  <img
+                    src="https://images.unsplash.com/photo-1608791952180-79294109d843?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80"
+                    alt="">
+                </div>
+                <div class="card-content">
+                  <h1 class="text-black">Ned</h1>
+                  <p class="text-black">CEO</p>
+                  <p>He has over 20 years of experience & is working on multiple projects creating use cases for
+                    Data Science</p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <div class="glide__arrows" data-glide-el="controls">
+            <button class="glide__arrow glide__arrow--left text-black" data-glide-dir="<">
+              < </button> <button class="glide__arrow glide__arrow--right text-black" data-glide-dir=">">>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div id="upgrade_sc">
+    <div id="name_sc">
+      <p>For queries, feedback & assistance</p>
+      <h1>upGrad Learner Support</h1>
+      <h3>(7 AM - 12 AM)</h3>
+    </div>
+    <div id="contact_sc">
+      <div id="contact1_sc">
+        <div id="con_ind_sc">For Indian Nationals</div>
+        <div><button id="btn1_sc">&#128222 1800-210-2020</button></div>
+      </div>
+      <div id="line_sc">|</div>
+      <div id="contact2_sc">
+        <div id="con_ind_sc">For Internationals</div>
+        <div><button id="btn1_sc">&#128222 +912265054631</button></div>
+      </div>
+    </div>
+  </div>
+  <div id="btn_des_sc">
+    <div id="disi_sc">Disclaimer:</div>
+    <div id="dec_con_sc">upGrad is India's largest online higher education company, as per monthly visit data and total
+      visits data for the last 28 days received from similarweb, as on April 13, 2020.</div>
+    <div id="de_con_sc">Deakin University CRICOS Provider Code 00113B.</div>
+  </div>
+  <div id="foot_sc">
+    <div id="foot1_sc">
+      <div id="foot_sec1_sc">
+        <div id="up_sc">upGrad</div>
+        <div id="bu_sc">Building Careers of Tomorrow</div>
+        <div id="icon_sc" style="padding-top: 5%;"><img
+            src="https://tse4.mm.bing.net/th?id=OIP.PRVOOYJrn_HpvB4B5qsAFQHaHa&pid=Api&P=0&w=300&h=300" width="8%"
+            height="8%" style="margin-left: 5%;">
+          <img src="https://tse3.mm.bing.net/th?id=OIP.ryAjOaa8NIvGrIJinaPA4gHaHa&pid=Api&P=0&w=300&h=300" width="8%"
+            height="8%" style="padding-left: 5%;">
+          <img src="https://tse3.mm.bing.net/th?id=OIP.EweiZI5x1TFwSg9aJw6pZgHaHa&pid=Api&P=0&w=300&h=300" width="8%"
+            height="8%" style="padding-left: 5%;">
+          <img src="https://tse3.mm.bing.net/th?id=OIP.pW1yW2xMwoiFLNT68flH_QAAAA&pid=Api&P=0&w=300&h=300" width="8%"
+            height="6%" style="padding-left: 5%;">
+        </div>
+      </div>
+      <div id="foot_sec2_sc">
+        <div class="head1_sc">UPGRAD</div>
+        <div class="p1_sc">About</div>
+        <div class="p1_sc">Careers</div>
+        <div class="p1_sc">Placement Support</div>
+        <div class="p1_sc">UpGrad Blog</div>
+        <div class="p1_sc">Success Stories</div>
+        <div class="p1_sc">For Teams</div>
+        <div class="p1_sc">Data Science Programs for Teams</div>
+        <div class="p1_sc">Product and Technology Programs for Teams</div>
+        <div class="p1_sc">Management Programs for Teams</div>
+        <div class="p1_sc">Online Power Learning</div>
+        <div class="p1_sc">Xchange</div>
+        <div class="p1_sc">BaseCamp</div>
+        <div class="p1_sc">For Business</div>
+        <div class="p1_sc">Short Videos</div>
+
+      </div>
+      <div id="foot_sec3_sc">
+        <div class="head1_sc">SUPPORT</div>
+        <div class="p1_sc">Contact</div>
+        <div class="p1_sc">Terms & Conditions</div>
+        <div class="p1_sc">Privacy Policy</div>
+
+
+      </div>
+      <div id="foot_sec4_sc">
+        <div id="head1_btn1_sc"><img
+            src="https://tse1.mm.bing.net/th?id=OIP.mghKY3vPMTo4Tx7Up_ttsQHaHa&pid=Api&P=0&w=300&h=300" width="20%"
+            height="90%">Get the andriod app</div>
+        <div id="head1_btn2_sc"><img src="https://cdn3.iconfinder.com/data/icons/inficons/512/apple.png" width="20%"
+            height="90%">Get the IOS app</div>
+      </div>
+    </div>
+    <div id="div_line_sc">
+      <hr />
+    </div>
+    <div id="foot2_sc">
+      <div id="foot2_sec1_sc">
+        <div class="head1_sc">DATA SCIENCE</div>
+        <div class="p1_sc">Data Science | Master's Degree</div>
+        <div class="p1_sc">Data Science | Executive PG Programme</div>
+        <div class="p1_sc">Data Science | Master of Science</div>
+        <div class="p1_sc">Data Science for Business Decision Making | Prof...</div>
+        <div class="p1_sc">Data Science | Advanced Certificate Programme</div>
+        <div class="p1_sc">Data Science | Executive Programme</div>
+        <div class="p1_sc">Data Science | Master of Science</div>
+        <div class="p1_sc">Machine Learning & AI | Executive PG Programme</div>
+        <div class="p1_sc">Machine Learning & NLP | Advanced Certificate P...</div>
+        <div class="p1_sc">Machine Learning & Deep Learning | Advanced C...</div>
+        <div class="p1_sc">Machine Learning & AI | Master of Science</div>
+        <div class="p1_sc">Machine Learning & Cloud | Advanced Certification</div>
+        <div class="p1_sc">M.Sc. in Machine Learning & AI | Master of Science</div>
+
+      </div>
+      <div id="foot2_sec2_sc">
+        <div class="head1_sc">MANAGEMENT</div>
+        <div class="p1_sc">Strategic Innovation, Digital Marketing and Business..</div>
+        <div class="p1_sc">Business Administration | Doctorate</div>
+        <div class="p1_sc">Product Management | Certification</div>
+        <div class="p1_sc">Design Thinking | Certification</div>
+        <div class="p1_sc">Business Administration | Master's Degree</div>
+        <div class="p1_sc">Human Resource Management | Excecutive PG Pr...</div>
+        <div class="p1_sc">Deakin Business School | MBA (Global)</div>
+        <div class="p1_sc">Liverpool Business School | MBA (Global)</div>
+        <div class="p1_sc">MBA in Digital Finance and Banking | MBA</div>
+        <div class="p1_sc">Deakin Business School | MBA (Global)</div>
+        <div class="p1_sc">Digital Marketing and Communication | Advanced...</div>
+        <div class="p1_sc">Management | PG Program</div>
+        <div class="p1_sc">PG Diploma in Management | PG Diploma</div>
+        <div class="p1_sc">upGrad's Job Linked Management | PG Program</div>
+        <div class="p1_sc">Integrated Supply Chain Management | Global M...</div>
+        <div class="p1_sc">Effective Leadership and Management | Global Pr...</div>
+        <div class="p1_sc">Business Administration (General) | Master's Degr...</div>
+        <div class="p1_sc">HR Management and Analytics | Professional Cert....</div>
+        <div class="p1_sc">Deakin Business School and MICA | MBA (Global)...</div>
+        <div class="p1_sc">Digital Branding & Advertising | Advanced Certific...</div>
+        <div class="p1_sc">Master of Business Administration (General) | MBA</div>
+        <div class="p1_sc">Masters Qualifying Program | MAsters Qualifying ...</div>
+        <div class="p1_sc">Advertising & Branding | MBA</div>
+        <div class="p1_sc">Strategy & Leadership | MBA</div>
+        <div class="p1_sc">Fundamental Specifications | MBA</div>
+        <div class="p1_sc">MBA with Advanced Specializations | Master's De...</div>
+        <div class="p1_sc">Essex | Online MBA</div>
+        <div class="p1_sc">Project Management | PG Courses</div>
+        <div class="p1_sc">Human Resource Management | PG Courses</div>
+        <div class="p1_sc">Business Management | UG & PG Courses</div>
+        <div class="p1_sc">Digital Marketing | PG Courses</div>
+        <div class="p1_sc">Business with Finance | PG Courses</div>
+
+      </div>
+      <div id="foot2_sec3_sc">
+        <div class="head1_sc">SOFTWARE & TECHNOLOGY</div>
+        <div class="p1_sc">Computer Science | Master's Degree</div>
+        <div class="p1_sc">Software Development - Spl. in Cyber Security | E</div>
+        <div class="p1_sc">Software Development - Spl. in Cloud computing...</div>
+        <div class="p1_sc">Computer Applications | Master's Degree</div>
+        <div class="p1_sc">Computer Applications | Artificial Intelligence | Ma...</div>
+        <div class="p1_sc">Computer Applications | Cyber Security | Master's...</div>
+        <div class="p1_sc">Software Development - Spl. in Full Stack Develo...</div>
+        <div class="p1_sc">Software Development - Spl. in Big Data | Executi...</div>
+        <div class="p1_sc">Software Development - Spl. in DevOps | Executi..</div>
+        <div class="p1_sc">Software Development - Spl. in Blockchain | Exec....</div>
+        <div class="p1_sc">Software Engineering | PG Certification</div>
+        <div class="p1_sc">Cyber Security | Advanced Certificate Programme</div>
+        <div class="p1_sc">Cloud Computing | Advanced Certificate Program...</div>
+        <div class="p1_sc">Big Data | Advanced Certificate Programme</div>
+        <div class="p1_sc">DevOps | Advanced Certificate Programme</div>
+        <div class="p1_sc">Blockchain | Advanced Certificate Programme</div>
+        <div class="p1_sc">Computer Applications | Master's Degree</div>
+        <div class="p1_sc">Computer Science | PG Courses</div>
+        <div class="p1_sc">Cyber Security | PG Courses</div>
+      </div>
+      <div id="foot2_sec4_sc">
+        <div class="head1_sc">BUSINESS ANALYTICS</div>
+        <div class="p1_sc">Business Analytics | Executive PG Programme</div>
+        <div class="p1_sc">Business Analytics | Global Master Certificate in B...</div>
+        <div class="p1_sc">Business Analytics | Business Analytics Certification</div>
+        <div class="p1_sc">Business Analytics | Certificate Program</div>
+        <div class="p1_sc">Business Analytics | PG Courses</div>
+
+      </div>
+    </div>
+    <div id="div_line_sc">
+      <hr>
+    </div>
+    <div id="foot3_sc">
+      <div id="foot3_sec1_sc">
+        <div class="head1_sc">STUDY ABROAD</div>
+        <div class="p1_sc">Data Science | Master Degree</div>
+        <div class="p1_sc">International Management | Master's Degree</div>
+        <div class="p1_sc">Business degree programs in Australia for CU BB....</div>
+        <div class="p1_sc">Cyber Security | Master's Degree</div>
+        <div class="p1_sc">Bachelor of Information Technology Pathway to A....</div>
+        <div class="p1_sc">B.Sc Computer Science Pathway to USA | Bachel....</div>
+        <div class="p1_sc">Bachelor of Business Pathway to Canada | Bache.... </div>
+        <div class="p1_sc">Bachelor of Computer Information Systems Pathw....</div>
+        <div class="p1_sc">Bachelor of Business Administration Pathway to ....</div>
+
+
+      </div>
+      <div id="foot3_sec2_sc">
+        <div class="head1_sc">ARTS</div>
+        <div class="p1_sc">Communication and Journalism (English) | Master....</div>
+        <div class="p1_sc">Public Relations (English) | Master of Arts</div>
+        <div class="p1_sc">Master of Arts (Journalism & Mass Communication...</div>
+
+
+
+      </div>
+      <div id="foot3_sec3_sc">
+        <div class="head1_sc">COMMERCE</div>
+        <div class="p1_sc">Finance and Systems | Master of Commerce</div>
+
+
+      </div>
+      <div id="foot3_sec4_sc">
+        <div class="head1_sc">LAW</div>
+        <div class="p1_sc">Jindal Global Law School (JGLS) | LL.M. in Corpor...</div>
+        <div class="p1_sc">UG & PG Courses in Law | UG & PG Courses in L....</div>
+
+      </div>
+    </div>
+    <div id="div_line_sc">
+      <hr />
+    </div>
+    <div id="foot4_sc">
+      <div id="foot4_sec1_sc">
+        <div class="head1_sc">HEALTH</div>
+        <div class="p1_sc">Healthcare Management | Executive PG Program...</div>
+        <div class="p1_sc">Health | UG & PG Courses</div>
+        <div class="p1_sc">Public Health | PG Courses</div>
+        <div class="p1_sc">Nursing | PG Courses</div>
+
+
+      </div>
+      <div id="foot4_sec2_sc">
+        <div class="head1_sc">BACHELOR DEGREE</div>
+        <div class="p1_sc">Business Administration | Bachelor's Degree</div>
+        <div class="p1_sc">Business Administration | Bachelor's Degree</div>
+        <div class="p1_sc">Advertising & Branding | BBA</div>
+        <div class="p1_sc">Strategy & Leadership | BBA</div>
+        <div class="p1_sc">Marketing, Finance & HRM | BBA</div>
+        <div class="p1_sc">Computer Applications | Bachelor's Degree</div>
+        <div class="p1_sc">Computer Applications | Bachelor's Degree</div>
+        <div class="p1_sc">Texation and finance | Bachelor of Commerce</div>
+        <div class="p1_sc">Journalism & Mass Communication | Bachelor of ....</div>
+
+
+
+      </div>
+      <div id="foot4_sec3_sc">
+        <div class="head1_sc">EDUCATION</div>
+        <div class="p1_sc">Education | PG Courses</div>
+
+
+      </div>
+      <div id="foot4_sec4_sc">
+        <div class="head1_sc">CRIMINOLOGY & pYSCHOLOGY</div>
+        <div class="p1_sc">Criminology | PG Courses</div>
+        <div class="p1_sc">Pyschology | UG & PG Courses</div>
+
+      </div>
+    </div>
+    <div id="div_line_sc">
+      <hr />
+    </div>
+    <div class="p1_sc" style="padding-left: 20%;">2015-2021 upGrad Education Private Limit..</div>
+
+
+  </div>
+</body>
+
+
+<script src='https://cdn.jsdelivr.net/npm/@glidejs/glide'></script>
+<script>
+  const config = {
+    type: 'carousel',
+    perView: 4
+  }
+  new Glide('.glide', config).mount()
+</script>
+<script src="/js/course.js"></script>
+
+</html>

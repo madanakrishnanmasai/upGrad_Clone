@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/form.css">
+  <title>Form</title>
+</head>
+
+<body>
+  <section class="banner-mk">
+    <div class="banner-heading-mk">
+      <h1>Application Process</h1>
+      <p>Advanced Certificate Programme in BlockChain Technology</p>
+    </div>
+  </section>
+  <div id="form-basic-container-mk">
+    <h1>Basic Information</h1>
+    <hr>
+    <form id="form-mk">
+      <div class="form-content">
+        <label for="first name">First Name</label>
+        <input type="text" placeholder="First Name">
+      </div>
+      <div class="form-content">
+        <label for="last name">Last Name</label>
+        <input type="text" placeholder="Last Name">
+      </div>
+      <div class="form-content email">
+        <label for="email">Email</label>
+        <input type="text" placeholder="email">
+      </div>
+      <div class="form-content dob">
+        <label for="date-of-birth">Date of Birth</label>
+        <input type="text" placeholder="DD/MM/YYYY">
+      </div>
+      <div class="form-content gender">
+        <label for="gender" class="block">Gender</label>
+        <div>
+          <input type="radio" name="gender" id="male-mk" value="male">
+          <label for="" class="inline">Male</label>
+          <input type="radio" name="gender" id="female-mk" value="female">
+          <label for="" class="inline">Female</label>
+        </div>
+      </div>
+      <div class="form-content">
+        <label for="city">city</label>
+        <input type="text" placeholder="Enter city">
+      </div>
+      <div class="form-content">
+        <label for="state">State</label>
+        <input type="text" placeholder="Enter state">
+      </div>
+      <div class="form-content">
+        <label for="country">Country</label>
+        <input type="text" placeholder="Enter country">
+      </div>
+    </form>
+  </div>
+  <div id="form-basic-container-mk">
+    <h1>Educational Qualification (Undergraduate)</h1>
+    <hr>
+    <form id="form-education-mk">
+      <div class="form-content width-70">
+        <label for="name-of-institute">Name of Institute</label>
+        <input type="text" placeholder="Enter your Institute name">
+      </div>
+      <div class="form-content width-70">
+        <label for="field-of-study">Filed of Study</label>
+        <input type="text" placeholder="Type your field of study & choose">
+      </div>
+      <div class="form-content width-70">
+        <label for="degree-level">Degree level</label>
+        <input type="text" placeholder="Select Degree level">
+      </div>
+      <div class="form-content width-70 dob">
+        <label for="marks-degree">Undergraduate - Final Degree Marks / GPA</label>
+        <input type="text" class="marks">
+      </div>
+      <div class="form-content width-30">
+        <label for="graduation-date">Month and Year of Graduation</label>
+        <input type="text" class="graduation">
+      </div>
+    </form>
+  </div>
+  <div id="form-basic-container-mk">
+    <h1>Work Experience Background (Most Recent)</h1>
+    <hr>
+    <form id="form-education-mk">
+      <div class="form-content width-70">
+        <label for="name-of-institute">Total Work Experience (in years)</label>
+        <input type="text" placeholder="Select option">
+      </div>
+      <a id="save-mk" onclick="getDetails()">
+        <p>Save & Continue</p>
+        <p>&rarr;</p>
+      </a>
+    </form>
+  </div>
+  </div>
+</body>
+<script src="/js/form.js"></script>
+
+
+</html>
