@@ -1,1 +1,1 @@
-web: node ./upgrad_backend/src/server.js
+web: node server.js
